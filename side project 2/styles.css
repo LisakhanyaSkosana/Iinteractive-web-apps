@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cinzel Decorative", serif;
+    
+}
+body{
+    height: 100vh;
+    font-family:"Cinzel Decorative", serif; 
+    font-weight: 500;
+}
+.cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cinzel-decorative-bold {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .cinzel-decorative-black {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+.hero{
+    width: 150;
+    min-height: 80vh;
+    background-position:center ;
+    background-image: url(./Home.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 5%;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    color:rgb(46, 33, 33);
+    gap: 100px 200px;
+    margin: 1px;
+    font-weight: 800;
+    font-style: bold;
+}
+
+nav ul li a{
+    text-decoration: none;
+    gap: 100px 200px;
+    color: rgb(46, 33, 33);
+    font-weight: 800;
+    font-style: bold;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: rgb(46, 33, 33) ;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(45deg, #744c29, #523725);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+.content {
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.content h1{
+    font-size: 50px;
+    color: #8b542e ;
+   font-family: "Cinzel Decorative", serif;
+}
+.content h2 {
+    font-family:"Cinzel Decorative", serif;;
+    color: #633f27;
+    font-size: 45px;
+}
+.content .btn {
+    padding: 15px 50px ;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+.btn:hover {
+
+    border-top-right-radius: 30px;
+} 
+
+.Frontals-img {
+    width: 350px ;
+    height: 400px;
+    position: absolute ;
+    bottom: 0%;
+    right: 7%;
+}
+.Frontals-img:hover{
+    transition: 0.3s;
+}
+.Frontals-img.anim{
+    animation-delay: 1.5s;
+}
+.Frontals-img.img1 {
+    box-shadow: 10px 7px 20px #744c29;
+}
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+
+}
+
+@keyframes moveup {
+   100%{
+       opacity: 1;
+       transform: translateY(0px);
+   }
+
+}
+
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background-color: rgb(105, 77, 51);
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(#744c29);
+    transition: .5s ease-in-out;
+}
+
+.container:hover .card {
+    filter: blur(20px);
+    transform: scale(.9);
+    opacity: .5;
+}
+
+.container .card:hover {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1 ;
+}
+
+.container .card:hover .circle{
+    clip-path: circle(600px);
+}
