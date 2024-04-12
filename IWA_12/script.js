@@ -25,37 +25,55 @@ const STATUS_MAP = {
     }
 }
 
-// Edit below line 
+// Edit below line
 
-status = selector(status)
-reserve = selector(reserve)
-checkout = selector(checkout)
-checkin = selector(checkin)
+const statusSpan1 = document.querySelector('#book1 .status');
 
-status = selector(status)
-reserve = selector(reserve)
-checkout = selector(checkout)
-checkin = selector(checkin)
+const reserveButton1 = document.querySelector('#book1 .reserve');
+console.log(reserveButton1);
 
-status = selector(status)
-reserve = selector(reserve)
-checkout = selector(checkout)
-checkin = selector(checkin)
+const checkoutButton1 = document.querySelector('#book1 .checkout');
+console.log(checkoutButton1);
 
-checkin.style.color = "none";
-document.body.style.color = STATUS_MAP.color;
-reserve.style = STATUS_MAP.canReserver ? 'enabled' : 'disabled'
-checkout.style = STATUS_MAP.canCheckout ? 'enabled' : 'disabled'
-checkin.style = STATUS_MAP.canCheckIn ? 'enabled' : 'disabled'
+const checkinButton1 = document.querySelector('#book1 .checkin');
+console.log(checkinButton1);
 
-checkin.style.color = "none";
-document.body.style.color = STATUS_MAP.color
-reserve.style = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout.style = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.style = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+const statuSpan2 = document.querySelector('#book2 .status');
 
-checkin.style.color = "none";
-document.body.style.color = STATUS_MAP.status.color
-reserve.style = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout.style = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.style = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+const reserveButton2 = document.querySelector('#book2 .reserve');
+console.log(reserveButton2);
+
+const checkoutButton2 = document.querySelector('#book2 .checkout');
+console.log(checkoutButton2);
+
+const checkinButton2 = document.querySelector('#book2 .checkin');
+console.log(checkinButton2)
+
+const statusSpan3 = document.querySelector('#book3 .status');
+
+const reserveButton3 = document.querySelector('#book3 .reserve');
+console.log(reserveButton3);
+
+const checkoutButton3 = document.querySelector('#book3 .checkout');
+console.log(checkoutButton3);
+
+const checkinButton3 = document.querySelector('#book3 .checkin');
+console.log(checkinButton3);
+
+checkinButton1.style.color = '';
+document.statusSpan1 = STATUS_MAP.color;
+reserveButton1.disabled = STATUS_MAP.canReserver ;
+checkoutButton1.disabled = STATUS_MAP.canCheckout ;
+checkinButton1.enabled = STATUS_MAP.canCheckIn;
+
+checkinButton2.style.color = '';
+document.statusSpan2 = STATUS_MAP.color;
+reserveButton2.disabled = STATUS_MAP.canReserver ;
+checkoutButton2.disabled = STATUS_MAP.canCheckout ;
+checkinButton2.enabled = STATUS_MAP.canCheckIn ;
+
+checkinButton3.style.color = '';
+document.statusSpan3 = STATUS_MAP.color;
+reserveButton3.disabled = STATUS_MAP.canReserver ;
+checkoutButton3.disabled = STATUS_MAP.canCheckout ;
+checkinButton3.enabled = STATUS_MAP.canCheckIn ;

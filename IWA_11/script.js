@@ -1,36 +1,58 @@
 // script.js
 
-const root1 = document.getElementById("order1")
+const root1 = document.querySelector('[data-key="order1"]');
 
-const biscuits1 = document.getElementById("biscuits1")
-const donuts1 = document.getElementById("donuts1")
-const pancakes1 = document.getElementById("panackes1")
-const status1 = document.getElementById("status1")
+let biscuits1 = root1.querySelector('.biscuits .count');
+console.log(biscuits1);
 
-const root2 = document.getElementById("order2")
-const biscuits2 = document.getElementById("biscuits2")
-const donuts2 = document.getElementById("donuts2")
-const pancakes2 = document.getElementById("pancakes2")
-const status2 = document.getElementById("status2")
+let donuts1 = root1.querySelector('.donuts .count');
+console.log(donuts1);
 
-const root = document.getElementById("order3")
-const biscuits = document.getElementById("biscuits3")
-const donuts = document.getElementById("donuts3")
-const pancakes = document.getElementById("pancakes3")
-const status = document.getElementById("status3")
+let pancakes1 = root1.querySelector('.pancakes .count');
+console.log(pancakes1);
 
-biscuits = root.biscuits,
-donuts = 1-root.donuts,
-pancakes = 1-root.pancakes,
-status = 1-root.status ? Delivered : Pending
+let status1 = root1.querySelector('.delivered .count');
+console.log(status1);
 
-biscuits = 2-root.biscuits,
-donuts = 2-root.donuts,
-pancakes = 2-root.pancakes,
-status = 2-root.status ? Delivered : Pending
+const root2 = document.querySelector('[data-key="order2"]');
 
-biscuits= 3-root.biscuits,
-donuts = 3-root.donuts,
-pancakes = 3-root.pancakes,
-status = 3-root.status ? Delivered : Pending
+let biscuits2 = root2.querySelector('.biscuits .count');
+console.log(biscuits2);
 
+let donuts2 = root2.querySelector('.donuts .count');
+console.log(donuts2);
+
+let pancakes2 = root2.querySelector('.pancakes .count');
+console.log(pancakes2);
+
+let status2 = root2.querySelector('.delivered .count');
+console.log(status2);
+
+const root3 = document.querySelector('[data-key="order3"]');
+
+let biscuits3 = root3.querySelector('.biscuits .count');
+console.log(biscuits3);
+
+let donuts3 = root3.querySelector('.donuts .count');
+console.log(donuts3);
+
+let pancakes3 = root3.querySelector('.pancakes .count');
+console.log(pancakes3);
+
+let status3 = root3.querySelector('.delivered .count');
+console.log(status3);
+
+ biscuits1.textContent = root1.dataset.biscuits;
+ donuts1.textContent = root1.dataset.donuts;
+ pancakes1.textContent = root1.dataset.pancakes;
+ status1.textContent = root1.dataset.delivered === "true" ? 'Delivered' : 'Pending';
+
+ biscuits2.textContent = root2.dataset.biscuits;
+ donuts2.textContent = root2.dataset.donuts;
+ pancakes2.textContent = root2.dataset.pancakes;
+ status2.textContent = root2.dataset.delievered === "false" ? 'Delivered' : 'Pending';
+
+ biscuits3.textContent = root3.dataset.biscuits;
+ donuts3.textContent = root3.dataset.donuts;
+ pancakes3.textContent = root3.dataset.pancakes;
+ status3.textContent = root3.dataset.delievered == "true" ? 'Delivered' : 'Pending';
